@@ -52,13 +52,21 @@ ol {
 }
 
 .result__video-container {
-  margin-bottom: 16px;
+  inline-size: 711px;
+  block-size: 386px;
   position: relative;
+  inline-size: 711px;
+  block-size: 386px;
+  margin-bottom: 16px;
+  
 }
 
 .result__video {
-  display: block;
-  width: 100%;
+  inline-size: 100%;
+  block-size: 386px;
+  object-fit: cover;
+  object-position: center;
+  
 }
 
 .search-form {
@@ -69,21 +77,23 @@ ol {
 
 .search-form__fieldset {
   border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
   text-align: left;
-  padding-bottom: 5px;
 }
 
 .search-form__checkbox-list {
   display: flex;
   inline-size: 212px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+  
 }
 
 .search-form__label {
@@ -108,7 +118,6 @@ ol {
 .search-form__label-text {
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
   text-align: left;
   display: block;
   margin-right: 15px;
@@ -137,7 +146,6 @@ ol {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
   text-align: left;
   color: #fff;
   appearance: none;
@@ -148,14 +156,16 @@ ol {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
   text-align: left;
-  color: #fff;
-  opacity: 0.7;
+  color: rgba(255, 255, 255, .7);
 }
 
 .search-form__textfield:focus {
   outline: none;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #fff;
 }
 
 .search-form__checkbox {
@@ -173,19 +183,19 @@ ol {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
-  inline-size: 13px;
-  block-size: 13px;
+  inline-size: 15px;
+  block-size: 15px;
   position: absolute;
   background-color: #fff;
-  top: 2px;
-  left: 2px;
+  top: 1px;
+  left: 1px;
 }
 
 .button {
-  font-size: 17px;
+  font-family: inherit;
+  font-size: 18px;
   font-weight: 700;
   line-height: 22px;
-  letter-spacing: 0em;
   text-align: center;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -193,6 +203,7 @@ ol {
   background-color: inherit;
   color: #fff;
   cursor: pointer;
+  appearance: none;
 }
 
 .search-form__submit-button {
@@ -226,18 +237,17 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70px;
-  letter-spacing: 0em;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 26px;
 }
 
 .content__accent {
-  opacity: 0.3;
+  color: #545050;
 }
 
 .content__list {
@@ -297,12 +307,10 @@ ol {
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
-  letter-spacing: 0em;
   text-align: left;
   color: #fff;
   margin-bottom: 6px;
   text-transform: uppercase;
-  /* word-break: break-word; */
   inline-size: 180px;
   overflow: hidden;
   white-space: nowrap;
@@ -314,11 +322,14 @@ ol {
   font-size: 18px;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: 0em;
   text-align: left;
   color: #fff;
 }
 
 .content__video-card-thumbnail {
+  display: block;
   inline-size: 194px;
+  block-size: 103px;
+  object-fit: cover;
+  object-position: center;
 }
