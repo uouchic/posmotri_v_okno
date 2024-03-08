@@ -56,7 +56,6 @@ ol {
   block-size: 386px;
   position: relative;
   inline-size: 711px;
-  block-size: 386px;
   margin-bottom: 16px;
   
 }
@@ -303,7 +302,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
